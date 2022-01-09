@@ -1,0 +1,110 @@
+{
+  "stations": [
+    {
+      "id": "MIGROL_100041",
+      "name": "Migrol Tankstelle",
+      "address": "Scheffelstrasse 16",
+      "city": "Zürich",
+      "latitude": 47.3943939,
+      "longitude": 8.52981,
+      "pumps": [
+        {
+          "pid": 10001,
+          "fuel_type": "BENZIN_95",
+          "price": 1.68,
+          "available": true
+        },
+        {
+          "pid": 10002,
+          "fuel_type": "BENZIN_98",
+          "price": 1.77,
+          "available": false
+        },
+        {
+          "pid": 10003,
+          "fuel_type": "DIESEL",
+          "price": 1.75,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "MIGROL_100085",
+      "name": "Ming",
+      "address": "Birmensdorferstrasse 517",
+      "city": "Zürich",
+      "latitude": 47.367348257,
+      "longitude": 8.4942242729,
+      "pumps": [
+        {
+          "pid": 10001,
+          "fuel_type": "BENZIN_95",
+          "price": 1.72,
+          "available": true
+        },
+        {
+          "pid": 10002,
+          "fuel_type": "BENZIN_98",
+          "price": 1.79,
+          "available": true
+        },
+        {
+          "pid": 10003,
+          "fuel_type": "DIESEL",
+          "price": 1.71,
+          "available": false
+        },
+        {
+          "fuel_type": "",
+          "price": 0,
+          "available": false
+        }
+      ]
+    },
+    {
+      "name": "Test Station",
+      "address": "Street 124",
+      "city": "Test City",
+      "latitude": 0,
+      "longitude": 0,
+      "pumps": [
+        {
+          "fuel_type": "Test Type",
+          "price": "10",
+          "available": true
+        },
+        {
+          "fuel_type": "Test Type 2",
+          "price": "14",
+          "available": true
+        }
+      ],
+      "id": "BzBP0x_"
+    },
+    {
+      "name": "Fuel Station",
+      "address": "Austria",
+      "city": "Austria City",
+      "latitude": 47.550343121178805,
+      "longitude": 14.533838320312492,
+      "pumps": [
+        {
+          "fuel_type": "PETROL",
+          "price": "20",
+          "available": true
+        },
+        {
+          "fuel_type": "DIESEL",
+          "price": "30",
+          "available": true
+        },
+        {
+          "fuel_type": "BENZIN",
+          "price": "10",
+          "available": true
+        }
+      ],
+      "id": "vb6lrMy"
+    }
+  ]
+}
