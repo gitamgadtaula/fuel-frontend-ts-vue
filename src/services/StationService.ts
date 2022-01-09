@@ -2,17 +2,17 @@ import FuelStation, { NewStation } from '@/interfaces/FuelStation'
 import axios from 'axios'
 import authHeader from './auth-header'
 
-const API_URL = process.env.VUE_APP_API_BASE
+const API_URL = process.env.FUEL_BACKEND
 
 class StationService {
   addStation(payload: NewStation) {
-    return axios.post(API_URL + 'fuelstations', payload, {
+    return axios.post(`${API_URL}fuelstations`, payload, {
       headers: authHeader(),
     })
   }
 
   getAllStations() {
-    return axios.get(API_URL + 'fuelstations', { headers: authHeader() })
+    return axios.get(`${API_URL}fuelstations`, { headers: authHeader() })
   }
 
   updateStation(payload: FuelStation) {
@@ -28,7 +28,7 @@ class StationService {
   }
 
   deleteAllStations() {
-    return axios.delete(API_URL + 'fuelstations/', { headers: authHeader() })
+    return axios.delete(`${API_URL}fuelstations`, { headers: authHeader() })
   }
 }
 

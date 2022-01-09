@@ -11,7 +11,7 @@ export default interface FuelStation {
 }
 
 export interface Pump {
-  pid?: number
+  id?: number
   fuel_type: string
   price: number
   available: boolean

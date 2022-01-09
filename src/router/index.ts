@@ -28,9 +28,6 @@ const routes: Array<RouteConfig> = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
@@ -46,8 +43,6 @@ router.beforeEach((to, from, next) => {
   const authRequired = to.meta?.requiresAuth
   const loggedIn = localStorage.getItem('fuelToken')
 
-  // trying to access a restricted page + not logged in
-  // redirect to login page
   if (authRequired && !loggedIn) {
     next('/login')
   } else {

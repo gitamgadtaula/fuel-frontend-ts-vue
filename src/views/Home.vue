@@ -28,6 +28,7 @@
       </v-row>
 
       <AddStation
+        v-if="addModal && newLatLng"
         :openModal="addModal"
         :latLng="newLatLng"
         @closeModal="addModal = false"

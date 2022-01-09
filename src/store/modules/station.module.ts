@@ -42,8 +42,6 @@ class Station extends VuexModule {
       (response: any) => {
         if (response.status === 200 && response.data) {
           this.context.commit('setStations', response.data.message)
-        } else {
-          // this.context.commit('setToast', { message: response.message, type: 'red', show: true }, {root: true})
         }
         return Promise.resolve(response.data)
       },

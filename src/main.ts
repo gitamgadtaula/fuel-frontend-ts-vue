@@ -8,7 +8,7 @@ import axios from 'axios'
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyAkn_W2miTbqDif7KMaWbuVSklLWAGR9BY',
+    key: process.env.MAPS_API_KEY,
     libraries: 'places',
   },
 })

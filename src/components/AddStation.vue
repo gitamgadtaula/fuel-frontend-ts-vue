@@ -159,7 +159,7 @@ export default class AddStation extends Vue {
     }
 
     created(): void {
-        this.station = emptyStation()
+        this.station = JSON.parse(JSON.stringify(emptyStation()))
         if(this.latLng) {
             this.station.latitude = this.latLng.latitude
             this.station.longitude = this.latLng.longitude
