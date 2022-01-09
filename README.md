@@ -1,5 +1,14 @@
 # Fuel Stations Frontend
 
+> https://master.d2bbdvl1wp9pr2.amplifyapp.com/
+
+You would need to sign in first.
+
+If you don't want to create a user:
+Name: autosense
+Email: autosense@autosense.com
+Password: autosense
+
 ## Project setup
 
 ```
