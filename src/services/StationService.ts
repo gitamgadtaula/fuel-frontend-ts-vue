@@ -5,13 +5,13 @@ import authHeader from './auth-header'
 const API_URL = 'https://asbackend.robertrichter.dev/api/v2/' // TODO: Move to .env
 class StationService {
   addStation(payload: NewStation) {
-    return axios.post(`${API_URL}fuelstations`, payload, {
+    return axios.post(API_URL + 'fuelstations', payload, {
       headers: authHeader(),
     })
   }
 
   getAllStations() {
-    return axios.get(`${API_URL}fuelstations`, { headers: authHeader() })
+    return axios.get(API_URL + 'fuelstations', { headers: authHeader() })
   }
 
   updateStation(payload: FuelStation) {

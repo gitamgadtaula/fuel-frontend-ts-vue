@@ -1,7 +1,7 @@
 import axios from 'axios'
 import User from '@/interfaces/User'
 
-const API_URL = process.env.FUEL_BACKEND
+const API_URL = 'https://asbackend.robertrichter.dev/api/v2/'
 
 class AuthService {
   async login(name: string, email: string, password: string) {
