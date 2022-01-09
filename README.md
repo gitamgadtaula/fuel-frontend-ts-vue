@@ -7,7 +7,9 @@ You would need to sign in first.
 If you don't want to create a user:
 
 > Name: autosense
+
 > Email: autosense@autosense.com
+
 > Password: autosense
 
 ## Project setup
