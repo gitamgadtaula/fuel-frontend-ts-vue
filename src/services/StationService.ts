@@ -2,8 +2,7 @@ import FuelStation, { NewStation } from '@/interfaces/FuelStation'
 import axios from 'axios'
 import authHeader from './auth-header'
 
-const API_URL = process.env.FUEL_BACKEND
-
+const API_URL = 'https://asbackend.robertrichter.dev/api/v2/' // TODO: Move to .env
 class StationService {
   addStation(payload: NewStation) {
     return axios.post(`${API_URL}fuelstations`, payload, {
@@ -28,7 +27,7 @@ class StationService {
   }
 
   deleteAllStations() {
-    return axios.delete(`${API_URL}fuelstations`, { headers: authHeader() })
+    return axios.delete(API_URL + 'fuelstations/', { headers: authHeader() })
   }
 }
 
